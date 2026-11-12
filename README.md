@@ -29,7 +29,9 @@ godot --headless --path . res://tests/test_runner.tscn
 
 Kodi i daljes është 0 kur kalojnë të gjitha. Provat mbulojnë rrugën kritike të Stazhit 1 dhe 10 në të dyja rrugët, rifillimin nga checkpoint, kyçjen e tolerancës ritmike, shtresat e muzikës dhe pasojën midis stazheve.
 
-**Gjendja: provat nuk janë ekzekutuar ende.** Mjedisi ku u shkrua kodi nuk kishte Godot, prandaj as kodi dhe as provat nuk janë nisur asnjëherë. Rezultati i parë i matur del kur të nisësh komandën më lart.
+**Rezultati i matur (12 nëntor 2026, Godot 4.7.2, Windows, headless): 68 kaluan, 0 dështuan, kodi i daljes 0.** Rifillimi nga checkpoint u mat 0.45 s. Në dalje Godot raportoi një paralajmërim për 8 objekte të paliruara nga vetë skena e provave.
+
+Provat e lëvizin lojtarin me teleportim nëpër pikat e rrugës, kështu që vërtetojnë logjikën e stazhit, jo ndjesinë e fluturimit apo largësitë e hendeqeve. Ato kërkojnë lojë me dorë.
 
 ## Struktura
 

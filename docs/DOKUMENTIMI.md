@@ -6,15 +6,15 @@ Data: 12 nëntor 2026 · Motori: Godot 4.x (GDScript) · Shtrirja: kontrolluesi 
 
 | Pjesa | Skedari | Gjendja |
 |---|---|---|
-| Kontrollues i përbashkët (ngritje, planim, frenim, ulje, shmangie, nota) | `player/cockatoo.gd` | i shkruar, i paekzekutuar |
+| Kontrollues i përbashkët (ngritje, planim, frenim, ulje, shmangie, nota) | `player/cockatoo.gd` | provat automatike kaluan; pa lojë me dorë |
 | Trup i përkohshëm me sy, kreshtë dhe peshë komike | `player/cockatoo_visual.gd` | i përkohshëm, pret referencat |
-| Kamera me horizont të drejtë | `player/follow_camera.gd` | i shkruar, i paekzekutuar |
-| Baza e stazheve + Stazhi 1 + Stazhi 10 | `stage/`, `stages/` | i shkruar, i paekzekutuar |
-| Muzikë adaptive me 4 shtresa, e sintetizuar në kod | `autoload/audio_director.gd` | i shkruar, i paekzekutuar |
-| Aksesueshmëri, fushatë, telemetri | `autoload/` | i shkruar, i paekzekutuar |
-| Prova funksionale (rreth 70 kontrolle) | `tests/test_runner.gd` | të shkruara, të paekzekutuara |
+| Kamera me horizont të drejtë | `player/follow_camera.gd` | provat automatike kaluan; pa lojë me dorë |
+| Baza e stazheve + Stazhi 1 + Stazhi 10 | `stage/`, `stages/` | provat automatike kaluan; pa lojë me dorë |
+| Muzikë adaptive me 4 shtresa, e sintetizuar në kod | `autoload/audio_director.gd` | provat automatike kaluan; pa lojë me dorë |
+| Aksesueshmëri, fushatë, telemetri | `autoload/` | provat automatike kaluan; pa lojë me dorë |
+| Prova funksionale (rreth 70 kontrolle) | `tests/test_runner.gd` | 68 kaluan, 0 dështuan (Godot 4.7.2) |
 
-Asgjë nuk është nisur në Godot. Çdo numër më poshtë është vlerë dizajni, jo matje.
+Provat u nisën më 12 nëntor 2026 në Godot 4.7.2 (Windows, headless): 68 kaluan, 0 dështuan; rifillimi nga checkpoint u mat 0.45 s. Loja nuk është luajtur ende me dorë, prandaj largësitë, kohëzgjatja dhe ndjesia e kontrollit mbeten vlera dizajni.
 
 ## 2. Kontrolluesi
 
@@ -132,7 +132,7 @@ Shtresat e muzikës: **bazë** gjithmonë, **rrezik** sipas zonës (0–100%), *
 | 9 | Çdo veprim mësohet pa tekst shpjegues | vëzhgim i lojës |
 | 10 | Kakaduja përputhet me referencat | pas marrjes së imazheve |
 
-Kriteret 1–6 kanë prova të shkruara por të paekzekutuara. Kriteret 7–10 kërkojnë lojë me dorë.
+Kriteret 1–6 kaluan në provat automatike. Kriteret 7–10 kërkojnë lojë me dorë dhe janë ende të hapura.
 
 ## 9. Tetë stazhet e tjera (dizajn, ende pa kod)
 
@@ -147,7 +147,7 @@ Baza `stage_base.gd` e ka skeletin tri-prova-plus-kulm, kështu që çdo çift i
 
 ## 10. Çfarë mbetet
 
-1. Të instalohet Godot dhe të nisen provat; gabimet e para të sintaksës ose të fizikës priten këtu.
+1. Të luhet me dorë (F5) për të kontrolluar ndjesinë e fluturimit, kamerën dhe pamjen.
 2. Të dërgohen referencat e kakadusë për modelin përfundimtar.
 3. Të rregullohen largësitë e hendeqeve pas lojës së parë me dorë.
 4. Çiftet 2↔9 deri 5↔6.
