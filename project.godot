@@ -1,0 +1,23 @@
+; Engine configuration file.
+; Silver PARROT - prototip Godot 4.x
+
+config_version=5
+
+[application]
+
+config/name="Silver PARROT"
+run/main_scene="res://main.tscn"
+
+[autoload]
+
+GameSettings="*res://autoload/settings.gd"
+Campaign="*res://autoload/campaign.gd"
+Telemetry="*res://autoload/telemetry.gd"
+AudioDirector="*res://autoload/audio_director.gd"
+InputSetup="*res://autoload/input_setup.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
